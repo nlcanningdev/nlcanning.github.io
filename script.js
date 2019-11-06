@@ -93,4 +93,4 @@ aboutButton.addEventListener("mouseover", aboutMouseover);
 aboutButton.addEventListener("mouseout", aboutMouseout);
 
 document.getElementById('homeWrapper').style.marginTop = 
-    (document.getElementById('home').offsetHeight / 50) - (document.getElementById('homeWrapper').offsetHeight / 50);
+    String((document.getElementById('home').offsetHeight / 50) - (document.getElementById('homeWrapper').offsetHeight / 50)) + "px";
