@@ -97,3 +97,8 @@ console.log("height of homeWrapper: " + document.getElementById('homeWrapper').o
 
 document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
+
+window.addEventListener('resize', function(event) {
+    document.getElementById('homeWrapper').style.marginTop = 
+    String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
+});
