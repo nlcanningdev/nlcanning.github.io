@@ -122,3 +122,8 @@ a:hover:-webkit-any-link {
 #logo {
     max-width: 150px;
 }
+
+.homeContent {
+    margin: auto;
+    color: white;
+}
