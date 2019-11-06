@@ -123,9 +123,8 @@ a:hover:-webkit-any-link {
     max-width: 150px;
 }
 #homeWrapper {
-    margin: auto;
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    text-align: center;
 }
 
 .homeContent {

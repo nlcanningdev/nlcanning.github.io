@@ -91,3 +91,6 @@ const aboutButton = document.getElementById("aboutButton");
 aboutButton.addEventListener("click", about);
 aboutButton.addEventListener("mouseover", aboutMouseover);
 aboutButton.addEventListener("mouseout", aboutMouseout);
+
+document.getElementById('homeWrapper').style.marginTop = 
+    (document.getElementById('home').offsetHeight / 50) - (document.getElementById('homeWrapper').offsetHeight / 50);
