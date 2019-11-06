@@ -117,3 +117,8 @@ a:-webkit-any-link {
 a:hover:-webkit-any-link {
     color:hotpink
 }
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
