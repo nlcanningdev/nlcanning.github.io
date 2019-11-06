@@ -125,6 +125,7 @@ a:hover:-webkit-any-link {
 
 #homeWrapper {
     text-align: center;
+    display: inline-block;
     vertical-align: middle;
 }
 
