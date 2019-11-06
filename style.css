@@ -124,13 +124,12 @@ a:hover:-webkit-any-link {
 }
 
 #homeWrapper {
-    text-align: center;
     display: inline-block;
+    margin: auto;
+    text-align: center;
     vertical-align: middle;
 }
 
 .homeContent {
-    margin: auto;
     color: white;
-    text-align: center;
 }
