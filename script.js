@@ -93,6 +93,7 @@ aboutButton.addEventListener("mouseover", aboutMouseover);
 aboutButton.addEventListener("mouseout", aboutMouseout);
 
 console.log("height of home: " + document.getElementById('home').offsetHeight);
+console.log("height of homeWrapper: " + document.getElementById('homeWrapper').offsetHeight);
 
 document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 50) - (document.getElementById('homeWrapper').offsetHeight / 50)) + "px";
