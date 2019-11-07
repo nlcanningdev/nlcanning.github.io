@@ -130,3 +130,7 @@ a:hover:-webkit-any-link {
 .homeContent {
     color: black;
 }
+
+.arialFont {
+    font-family: Arial, Helvetica, sans-serif;
+}
