@@ -98,7 +98,12 @@ console.log("height of homeWrapper: " + document.getElementById('homeWrapper').o
 document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
 
+document.getElementById('aboutWrapper').style.marginTop = 
+    String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
+
 window.addEventListener('resize', function(event) {
     document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
+    document.getElementById('aboutWrapperWrapper').style.marginTop = 
+    String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
 });
