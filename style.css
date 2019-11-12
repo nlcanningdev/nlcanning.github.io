@@ -141,3 +141,8 @@ a:hover:-webkit-any-link {
 #aboutText {
     font-size: 1.5em;
 }
+
+#linkedinImg {
+    width: 100px;
+    height: 100px;
+}
