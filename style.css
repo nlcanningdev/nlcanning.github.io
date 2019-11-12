@@ -138,11 +138,15 @@ a:hover:-webkit-any-link {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#about {
+    text-align: center;
+}
+
 #aboutText {
     font-size: 1.5em;
 }
 
 #linkedinImg {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
