@@ -74,7 +74,6 @@ const aboutMouseout = () => {
 var currentPage = 0;
 
 const menuArea = document.getElementById("menuArea");
-const menuSpace = document.getElementById("menuSpace");
 
 const container = document.getElementById("pageContainer");
 const homeButton = document.getElementById("logo");
@@ -95,6 +94,11 @@ aboutButton.addEventListener("mouseout", aboutMouseout);
 console.log("height of home: " + document.getElementById('home').offsetHeight);
 console.log("height of homeWrapper: " + document.getElementById('homeWrapper').offsetHeight);
 
+document.getElementById('software').style.marginBottom =
+    String((document.getElementById('home').offsetHeight /10)) + "px";
+document.getElementById('web').style.marginBottom =
+    String((document.getElementById('home').offsetHeight /10)) + "px";
+
 document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
 
@@ -104,6 +108,6 @@ document.getElementById('aboutWrapper').style.marginTop =
 window.addEventListener('resize', function(event) {
     document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
-    document.getElementById('aboutWrapperWrapper').style.marginTop = 
+    document.getElementById('aboutWrapper').style.marginTop = 
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
 });
