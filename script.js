@@ -91,8 +91,8 @@ aboutButton.addEventListener("click", about);
 aboutButton.addEventListener("mouseover", aboutMouseover);
 aboutButton.addEventListener("mouseout", aboutMouseout);
 
-console.log("height of home: " + document.getElementById('home').offsetHeight);
-console.log("height of homeWrapper: " + document.getElementById('homeWrapper').offsetHeight);
+console.log("width of home: " + document.getElementById('home').offsetWidth);
+console.log("width of homeWrapper: " + document.getElementById('homeWrapper').offsetWidth);
 
 document.getElementById('software').style.marginBottom =
     String((document.getElementById('home').offsetHeight /10)) + "px";
@@ -106,8 +106,13 @@ document.getElementById('aboutWrapper').style.marginTop =
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
 
 window.addEventListener('resize', function(event) {
+    document.getElementById('software').style.marginBottom =
+    String((document.getElementById('home').offsetHeight /10)) + "px";
+    document.getElementById('web').style.marginBottom =
+    String((document.getElementById('home').offsetHeight /10)) + "px";
     document.getElementById('homeWrapper').style.marginTop = 
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
     document.getElementById('aboutWrapper').style.marginTop = 
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
+    console.log("resize fired");
 });
