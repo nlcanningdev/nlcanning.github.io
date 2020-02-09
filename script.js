@@ -142,8 +142,8 @@ document.getElementById('aboutWrapper').style.marginTop =
 
 
 if(document.getElementById("updatesWrapper").offsetHeight < document.getElementById('home').offsetHeight) {
-    document.getElementById("updatesWrapper").style.touchAction = "none";
-    document.getElementById("updates").style.touchAction = "none";
+    document.getElementById("updatesWrapper").style.touchAction = "pinch-zoom";
+    document.getElementById("updates").style.touchAction = "pinch-zoom";
 }
 
 window.addEventListener('resize', function(event) {
