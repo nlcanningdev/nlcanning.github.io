@@ -7,21 +7,26 @@
 <body id="body">
     <div id="overflowWrapper">
     <div id="menuArea">
-        <div id="leftPadding" class="menuElement menuPadding"></div>
-        <div id="logoArea" class="menuElement">
+        <div id="leftPadding" class="menuFlexElement menuElement menuPadding"></div>
+        <div id="logoArea" class="menuFlexElement menuElement">
             <img id="logo" src="./img/logo.png" alt="logo">
             <div id="logoPadding"></div>
         </div>
-        <div id="updatesArea" class="menuElement arialFont">
+        <div id="updatesArea" class="menuElement  menuFlexElement arialFont">
             <button id="updatesButton" class="menuButton" type="button">Updates</button>
         </div>
-        <div id="portfolioArea" class="menuElement arialFont">
+        <div id="portfolioArea" class="menuElement menuFlexElement arialFont">
             <button id="portfolioButton" class="menuButton" type="button">Portfolio</button>
         </div>
-        <div id="aboutArea" class="menuElement arialFont">
+        <div id="aboutArea" class="menuElement menuFlexElement arialFont">
             <button id="aboutButton" class="menuButton" type="button">About</button>
         </div>
-        <div id="rightPadding" class="menuElement menuPadding"></div>
+        <div id="hamburgerMenuArea" class="menuElement menuFlexElement">
+            <button id="hamburgerMenuBotton" class="menuButton" type="button">
+                <img id="hamburgerMenuImage" src="img/hamburgerToOpen.png" alt="=">
+            </button>
+        </div>
+        <div id="rightPadding" class="menuElement menuFlexElement menuPadding"></div>
     </div>
     <div id="pageContainer">
         <div id="home" class="page">
@@ -32,7 +37,66 @@
             </div>
         </div>
         <div id="updates" class="page">
-            
+            <div id="updatesWrapper">
+            What is Lorem Ipsum?<br>
+Lorem Ipsum is simply dummy text of the printing <br>
+and typesetting industry. Lorem Ipsum has been the industry's <br>
+standard dummy text ever since the 1500s, when an unknown printer<br>
+ took a galley of type and scrambled it to make a type specimen book.<br> 
+ It has survived not only five centuries, but also the leap into electronic <br>
+ typesetting, remaining essentially unchanged. It was popularised in the <br>
+ 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
+ and more recently with desktop publishing software like Aldus <br>
+ PageMaker including versions of Lorem Ipsum.<br>
+ <br>
+Why do we use it?<br>
+It is a long established fact that a reader will be distracted by <br>
+the readable content of a page when looking at its layout. The point <br>
+of using Lorem Ipsum is that it has a more-or-less normal distribution <br>
+of letters, as opposed to using 'Content here, content here', <br>
+making it look like readable English. Many desktop publishing <br>
+packages and web page editors now use Lorem Ipsum as their default<br> 
+model text, and a search for 'lorem ipsum' will uncover many web <br>
+sites still in their infancy. Various versions have evolved over the <br>
+years, sometimes by accident, sometimes on purpose (injected humour <br>
+and the like).<br>
+<br>
+<br>
+Where does it come from?<br>
+Contrary to popular belief, Lorem Ipsum is not simply random <br>
+text. It has roots in a piece of classical Latin literature from <br>
+45 BC, making it over 2000 years old. Richard McClintock, a Latin <br>
+professor at Hampden-Sydney College in Virginia, looked up one of the <br>
+more obscure Latin words, consectetur, from a Lorem Ipsum passage, <br>
+and going through the cites of the word in classical literature, <br>
+discovered the undoubtable source. Lorem Ipsum comes from sections <br>
+1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The <br>
+Extremes of Good and Evil) by Cicero, written in 45 BC. This <br>
+book is a treatise on the theory of ethics, very popular during <br>
+the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum <br>
+dolor sit amet..", comes from a line in section 1.10.32.<br>
+<br>
+The standard chunk of Lorem Ipsum used since the 1500s is <br>
+reproduced below for those interested. Sections 1.10.32 and <br>
+1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are <br>
+also reproduced in their exact original form, accompanied<br> 
+by English versions from the 1914 translation by H. Rackham.<br>
+<br>
+Where can I get some?<br>
+There are many variations of passages of Lorem Ipsum available, <br>
+but the majority have suffered alteration in some form, by <br>
+injected humour, or randomised words which don't look even <br>
+slightly believable. If you are going to use a passage of <br>
+Lorem Ipsum, you need to be sure there isn't anything <br>
+embarrassing hidden in the middle of text. All the Lorem <br>
+Ipsum generators on the Internet tend to repeat predefined <br>
+chunks as necessary, making this the first true generator <br>
+on the Internet. It uses a dictionary of over 200 Latin words,<br> 
+combined with a handful of model sentence structures, to generate <br>
+Lorem Ipsum which looks reasonable. The generated Lorem Ipsum <br>
+is therefore always free from repetition, injected humour, or <br>
+non-characteristic words etc.<br>
+</div>
         </div>
         <div id="portfolio" class="page">
             
@@ -47,6 +111,17 @@
                 <a id="linkedin" href="https://www.linkedin.com/in/nicholas-canning-976615141/"><img id="linkedinImg" src="./img/linkedInLogo.png" alt="linkedIn"></a>
             </div>
 
+        </div>
+    </div>
+    <div id="mobileMenu">
+        <div id="mobileMenuUpdatesButtonArea" class="menuElement mobileMenuElement arialFont">
+            <button id="mobileMenuUpdatesButton" class="menuButton" type="button">Updates</button>
+        </div>
+        <div id="mobileMenuPortfolioButtonArea" class="menuElement mobileMenuElement arialFont">
+            <button id="mobileMenuPortfolioButton" class="menuButton" type="button">Portfolio</button>
+        </div>
+        <div id="mobileMenuAboutButtonArea" class="menuElement mobileMenuElement arialFont">
+            <button id="mobileMenuAboutButton" class="menuButton" type="button">About</button>
         </div>
     </div>
     </div>
