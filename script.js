@@ -129,9 +129,6 @@ mobileMenuPortfolioButton.addEventListener("click", mobilePortfolio);
 const mobileMenuAboutButton = document.getElementById("mobileMenuAboutButton");
 mobileMenuAboutButton.addEventListener("click", mobileAbout);
 
-console.log("width of home: " + document.getElementById('home').offsetWidth);
-console.log("width of homeWrapper: " + document.getElementById('homeWrapper').offsetWidth);
-
 document.getElementById('software').style.marginBottom =
     String((document.getElementById('home').offsetHeight /10)) + "px";
 document.getElementById('web').style.marginBottom =

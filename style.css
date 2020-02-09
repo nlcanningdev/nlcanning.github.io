@@ -6,7 +6,7 @@ body, #menuArea, .pageContainer, .page, .page img, #menuElement button, .menuBut
 /*might need to remove pageContainer
 add some test content to updates page to make sure*/
 html, body, #overflowWrapper, #menuArea, #pageContainer, .page {
-    touch-action: none;
+    touch-action: pinch-zoom;
 }
 
 #updates {
