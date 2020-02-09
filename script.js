@@ -71,7 +71,37 @@ const aboutMouseout = () => {
         aboutButton.style.color = "white";
 }
 
+const hamburgerMenu = () => {
+    if(hamburgerMenuIsOpen) {
+        document.getElementById("mobileMenu").style.visibility = "hidden";
+        document.getElementById("hamburgerMenuImage").src = "img/hamburgerToOpen.png";
+        hamburgerMenuIsOpen = false;
+    }
+    else {
+        document.getElementById("mobileMenu").style.visibility = "visible";
+        document.getElementById("hamburgerMenuImage").src = "img/hamburgerToClose.png";
+        hamburgerMenuIsOpen = true;
+    }
+}
+
+const mobileUpdates = () => {
+    updates();
+    hamburgerMenu();
+}
+
+const mobilePortfolio = () => {
+    portfolio();
+    hamburgerMenu();
+}
+
+const mobileAbout = () => {
+    about();
+    hamburgerMenu();
+}
+
 var currentPage = 0;
+
+var hamburgerMenuIsOpen = false;
 
 const menuArea = document.getElementById("menuArea");
 
@@ -90,6 +120,14 @@ const aboutButton = document.getElementById("aboutButton");
 aboutButton.addEventListener("click", about);
 aboutButton.addEventListener("mouseover", aboutMouseover);
 aboutButton.addEventListener("mouseout", aboutMouseout);
+const hamburgerMenuButton = document.getElementById("hamburgerMenuButton");
+hamburgerMenuButton.addEventListener("click", hamburgerMenu);
+const mobileMenuUpdatesButton = document.getElementById("mobileMenuUpdatesButton");
+mobileMenuUpdatesButton.addEventListener("click", mobileUpdates);
+const mobileMenuPortfolioButton = document.getElementById("mobileMenuPortfolioButton");
+mobileMenuPortfolioButton.addEventListener("click", mobilePortfolio);
+const mobileMenuAboutButton = document.getElementById("mobileMenuAboutButton");
+mobileMenuAboutButton.addEventListener("click", mobileAbout);
 
 console.log("width of home: " + document.getElementById('home').offsetWidth);
 console.log("width of homeWrapper: " + document.getElementById('homeWrapper').offsetWidth);
@@ -105,6 +143,12 @@ document.getElementById('homeWrapper').style.marginTop =
 document.getElementById('aboutWrapper').style.marginTop = 
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
 
+
+if(document.getElementById("updatesWrapper").offsetHeight < document.getElementById('home').offsetHeight) {
+    document.getElementById("updatesWrapper").style.touchAction = "none";
+    document.getElementById("updates").style.touchAction = "none";
+}
+
 window.addEventListener('resize', function(event) {
     document.getElementById('software').style.marginBottom =
     String((document.getElementById('home').offsetHeight /10)) + "px";
@@ -114,4 +158,22 @@ window.addEventListener('resize', function(event) {
     String((document.getElementById('home').offsetHeight / 2) - (document.getElementById('homeWrapper').offsetHeight / 2)) + "px";
     document.getElementById('aboutWrapper').style.marginTop = 
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
+    if(!(window.matchMedia("(max-width: 850px)").matches)) {
+        if(hamburgerMenuIsOpen) {
+            hamburgerMenu();
+        }
+    }
 });
+
+//hammer testing
+/*var updatesZoom = new Hammer(document.getElementById("updates"));
+updatesZoom.get('pinch').set({enable: true});
+updatesZoom.on("pinch", function(ev) {
+    console.log("test worked?");
+});
+
+var updatesWZoom = new Hammer(document.getElementById("updatesWrapper"));
+updatesWZoom.get('pinch').set({enable: true});
+updatesWZoom.on("pinch", function(ev) {
+    console.log("test worked?");
+});*/

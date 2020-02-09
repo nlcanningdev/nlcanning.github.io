@@ -5,7 +5,7 @@ body, #menuArea, .pageContainer, .page, .page img, #menuElement button, .menuBut
 
 /*might need to remove pageContainer
 add some test content to updates page to make sure*/
-html, body, #overflowWrapper, #menuArea, .page {
+html, body, #overflowWrapper, #menuArea, #pageContainer, .page {
     touch-action: none;
 }
 
@@ -14,6 +14,7 @@ html, body, #overflowWrapper, #menuArea, .page {
     margin-top: 10vh;
     text-align: center;
     overscroll-behavior: none;
+    overflow-x: hidden;
 }
 
 body {
@@ -145,6 +146,13 @@ a:hover:-webkit-any-link {
     text-align: center;
 }
 
+#updatesWrapper {
+    width: 100%;
+    text-align: center;
+    overscroll-behavior: none;
+    touch-action: auto;
+}
+
 .homeContent {
     color: black;
     font-size: 2.5em;
@@ -192,6 +200,7 @@ a:hover:-webkit-any-link {
     top: 8vh;
     border-radius: 0px 0px 15px 15px;
     font-size: 9vh;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 850px) {
@@ -206,9 +215,6 @@ a:hover:-webkit-any-link {
     }
     #hamburgerMenuArea {
         display: flex;
-    }
-    #mobileMenu {
-        visibility: visible;
     }
 }
 
