@@ -141,10 +141,10 @@ document.getElementById('aboutWrapper').style.marginTop =
     String((document.getElementById('about').offsetHeight / 2) - (document.getElementById('aboutWrapper').offsetHeight / 2)) + "px";
 
 
-if(document.getElementById("updatesWrapper").offsetHeight < document.getElementById('home').offsetHeight) {
+/*if(document.getElementById("updatesWrapper").offsetHeight < document.getElementById('home').offsetHeight) {
     document.getElementById("updatesWrapper").style.touchAction = "pinch-zoom";
     document.getElementById("updates").style.touchAction = "pinch-zoom";
-}
+}*/
 
 window.addEventListener('resize', function(event) {
     document.getElementById('software').style.marginBottom =
@@ -161,6 +161,8 @@ window.addEventListener('resize', function(event) {
         }
     }
 });
+
+console.log("result: " + window.visualViewport.scale > 1);
 
 //hammer testing
 /*var updatesZoom = new Hammer(document.getElementById("updates"));

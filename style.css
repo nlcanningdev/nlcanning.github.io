@@ -6,14 +6,15 @@ body, #menuArea, .pageContainer, .page, .page img, #menuElement button, .menuBut
 /*might need to remove pageContainer
 add some test content to updates page to make sure*/
 html, body, #overflowWrapper, #menuArea, #pageContainer, .page {
-    touch-action: pinch-zoom;
+    /*touch-action: pinch-zoom;*/
+    touch-action: auto;
 }
 
 #updates {
     touch-action: auto;
     margin-top: 10vh;
     text-align: center;
-    overscroll-behavior: none;
+    /*overscroll-behavior: none;*/
     overflow-x: hidden;
 }
 
