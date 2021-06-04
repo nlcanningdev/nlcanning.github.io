@@ -61,7 +61,7 @@ body {
 }
 
 #logoPadding {
-    /*flex-grow: 3;*/
+    flex-grow: 3;
 }
 
 .menuElement button {
@@ -82,8 +82,8 @@ body {
 }
 
 #logoArea {
-    /*flex-grow: 6;
-    flex-shrink: 6;*/
+    flex-grow: 6;
+    flex-shrink: 6;
 }
 
 .menuPadding {
