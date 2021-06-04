@@ -57,7 +57,7 @@ body {
 }
 
 .menuFlexElement button, #logoArea img {
-    /*flex-grow: 1;*/
+    flex-grow: 1;
 }
 
 #logoPadding {
