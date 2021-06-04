@@ -140,7 +140,7 @@ a:hover:-webkit-any-link {
 }
 
 #logo {
-    max-width: 150px;
+    /*max-width: 150px;*/
 }
 #homeWrapper {
     width: 100%;
