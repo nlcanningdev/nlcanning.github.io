@@ -82,8 +82,8 @@ body {
 }
 
 #logoArea {
-    flex-grow: 6;
-    flex-shrink: 6;
+    /*flex-grow: 6;
+    flex-shrink: 6;*/
 }
 
 .menuPadding {
@@ -140,7 +140,7 @@ a:hover:-webkit-any-link {
 }
 
 #logo {
-    /*max-width: 150px;*/
+    max-width: 500px;
 }
 #homeWrapper {
     width: 100%;
